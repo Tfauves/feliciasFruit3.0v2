@@ -35,8 +35,8 @@ public class Main {
 
 
 //        displayProducts(myProduce);
-//        displayProductByType(myProduce, "Fruit");
-        System.out.println( displayProductByIndex(myProduce, 3));
+        displayProductByType(myProduce, "Fruit");
+//        System.out.println( displayProductByIndex(myProduce, 3));
 
 
     }
@@ -52,7 +52,7 @@ public class Main {
     public static void displayProductByType(List<Product> productList, String type) {
 
         for (Product product : productList) {
-            if (product.getClass().getSimpleName().equals(type)) {
+            if (product.type.equals(type)) {
                 System.out.println(product);
             }
         }
