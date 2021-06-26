@@ -29,14 +29,16 @@ public class Main {
         myProduce.add(new Fruit("fruit", "apple", 0.59, true, "red"));
         myProduce.add(new Fruit("fruit", "lemons", 0.38, false, "yellow"));
         myProduce.add(new Fruit("fruit", "orange", 0.89, true, "orange"));
+        myProduce.add(new Fruit("fruit", "peach", 0.83, true, "peach"));
         myProduce.add(new Meat("meat", "steak tips", 8.49, true, true));
         myProduce.add(new Meat("meat", "chicken wings", 3.65, false, false));
         myProduce.add(new Meat("meat", "ground beef", 4.49, true, false));
+        myProduce.add(new Meat("meat", "beef jerky", 0.89, true, true));
 
 
 //        displayProducts(myProduce);
-//        displayProductByType(myProduce, "Fruit");
-        System.out.println( displayProductByIndex(myProduce, 3));
+        displayProductByType(myProduce, "Fruit");
+//        System.out.println( displayProductByIndex(myProduce, 3));
 
 
     }
@@ -52,7 +54,7 @@ public class Main {
     public static void displayProductByType(List<Product> productList, String type) {
 
         for (Product product : productList) {
-            if (product.getClass().getSimpleName().equals(type)) {
+            if (product.type.equals(type)) {
                 System.out.println(product);
             }
         }
