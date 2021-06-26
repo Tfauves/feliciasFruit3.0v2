@@ -29,9 +29,11 @@ public class Main {
         myProduce.add(new Fruit("fruit", "apple", 0.59, true, "red"));
         myProduce.add(new Fruit("fruit", "lemons", 0.38, false, "yellow"));
         myProduce.add(new Fruit("fruit", "orange", 0.89, true, "orange"));
+        myProduce.add(new Fruit("fruit", "peach", 0.83, true, "peach"));
         myProduce.add(new Meat("meat", "steak tips", 8.49, true, true));
         myProduce.add(new Meat("meat", "chicken wings", 3.65, false, false));
         myProduce.add(new Meat("meat", "ground beef", 4.49, true, false));
+        myProduce.add(new Meat("meat", "beef jerky", 0.89, true, true));
 
 
 //        displayProducts(myProduce);
