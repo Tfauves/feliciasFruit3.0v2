@@ -14,7 +14,7 @@ package com.careerDevs;
 //2. add to the list three different Meats and 3 different Fruits.
 //        3. in the main class create a method called displayProducts it should accept a Product list and display all the items in the list.
 //        4. Create a second displayProducts method in the main class that accepts a Product list AND a string 'type' if the type is meat only print the meat products and if fruit only display the fruit products
-//        a. extra challenge try using a switch statement for this instead of ifelse
+//        a. extra challenge try using a switch statement for this instead of if else
 //        5. create a displayProduct method that accepts a product list and an int i. print out the product at index i.
 //
 //
@@ -34,11 +34,13 @@ public class Main {
         myProduce.add(new Meat("meat", "chicken wings", 3.65, false, false));
         myProduce.add(new Meat("meat", "ground beef", 4.49, true, false));
         myProduce.add(new Meat("meat", "beef jerky", 0.89, true, true));
+        myProduce.add(new Candy("candy", "runts", 0.20, true, true, true));
+        myProduce.add(new Candy("candy", "gummy worms", 0.49, true, true, false));
 
 
 //        displayProducts(myProduce);
-        displayProductByType(myProduce, "Fruit");
-//        System.out.println( displayProductByIndex(myProduce, 3));
+        displayProductByType(myProduce, "candy");
+        //System.out.println( displayProductByIndex(myProduce, 3));
 
 
     }
