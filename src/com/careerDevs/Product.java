@@ -14,4 +14,6 @@ public class Product {
         this.pricePerPound = pricePerPound;
         this.isInStock = isInStock;
     }
+
+
 }
