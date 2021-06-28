@@ -36,11 +36,14 @@ public class Main {
         myProduce.add(new Meat("meat", "beef jerky", 0.89, true, true));
         myProduce.add(new Candy("candy", "runts", 0.20, true, true, true));
         myProduce.add(new Candy("candy", "gummy worms", 0.49, true, true, false));
+        myProduce.add(new Veggies("veggies", "peppers", 0.49, true, false, "green"));
 
 
 //        displayProducts(myProduce);
-        displayProductByType(myProduce, "candy");
+//        displayProductByType(myProduce, "candy");
         //System.out.println( displayProductByIndex(myProduce, 3));
+
+
 
 
     }
@@ -64,6 +67,18 @@ public class Main {
 
     public static String displayProductByIndex(List<Product> productList, int i) {
         return String.valueOf(productList.get(i).name);
+    }
+
+    public static void sellProduct(Scanner type) {
+
+        System.out.println(("Enter Product Type: "));
+        Scanner userOrder = new Scanner(System.in);
+        type = userOrder;
+        System.out.println(type);
+
+
+
+
     }
 
 }
