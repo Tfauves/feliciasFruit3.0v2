@@ -36,7 +36,8 @@ public class Main {
         myProduce.add(new Meat("meat", "beef jerky", 0.89, true, true));
         myProduce.add(new Candy("candy", "runts", 0.20, true, true, true));
         myProduce.add(new Candy("candy", "gummy worms", 0.49, true, true, false));
-        myProduce.add(new Veggies("veggies", "peppers", 0.49, true, false, "green"));
+        myProduce.add(new Veggies("veggies", "peppers", 0.49, true, false, "green", true));
+        myProduce.add(new Veggies("veggies", "carrots", 1.49, true, true, "orange", false));
 
 
 //        displayProducts(myProduce);
