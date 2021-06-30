@@ -11,6 +11,7 @@ public class Candy extends Product{
     this.isSweet = isSweet;
     this.isSour = isSour;
 
+
     }
     public String toString() {
 
