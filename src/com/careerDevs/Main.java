@@ -36,12 +36,11 @@ public class Main {
         myProduce.add(new Meat("meat", "beef jerky", 0.89, true, true));
         myProduce.add(new Candy("candy", "runts", 0.20, true, true, true));
         myProduce.add(new Candy("candy", "gummy worms", 0.49, true, true, false));
-        myProduce.add(new Candy("candy", "necco wafers", 0.4, true, false, false));
 
 
 //        displayProducts(myProduce);
-//        displayProductByType(myProduce, "candy");
-        System.out.println( displayProductByIndex(myProduce, 3));
+        displayProductByType(myProduce, "candy");
+        //System.out.println( displayProductByIndex(myProduce, 3));
 
 
     }
