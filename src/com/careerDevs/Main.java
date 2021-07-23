@@ -1,4 +1,5 @@
 package com.careerDevs;
+import java.util.*;
 //Felicia's fruit stand has upgraded. She now serves fruits and meat now.
 //
 //
@@ -23,47 +24,11 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        // write your code here
-        List<Product> myProduce = new ArrayList<>();
 
-        myProduce.add(new Fruit("fruit", "apple", 0.59, true, "red"));
-        myProduce.add(new Fruit("fruit", "lemons", 0.38, false, "yellow"));
-        myProduce.add(new Fruit("fruit", "orange", 0.89, true, "orange"));
-        myProduce.add(new Fruit("fruit", "peach", 0.83, true, "peach"));
-        myProduce.add(new Meat("meat", "steak tips", 8.49, true, true));
-        myProduce.add(new Meat("meat", "chicken wings", 3.65, false, false));
-        myProduce.add(new Meat("meat", "ground beef", 4.49, true, false));
-        myProduce.add(new Meat("meat", "beef jerky", 0.89, true, true));
-        myProduce.add(new Candy("candy", "runts", 0.20, true, true, true));
-        myProduce.add(new Candy("candy", "gummy worms", 0.49, true, true, false));
-
-
-//        displayProducts(myProduce);
-        displayProductByType(myProduce, "candy");
-        //System.out.println( displayProductByIndex(myProduce, 3));
-
-
-    }
-
-    public static void displayProducts(List<Product> productList) {
-
-        for (Product product : productList) {
-
-            System.out.println(product);
-        }
-    }
-
-    public static void displayProductByType(List<Product> productList, String type) {
-
-        for (Product product : productList) {
-            if (product.type.equals(type)) {
-                System.out.println(product);
-            }
-        }
-    }
-
-    public static String displayProductByIndex(List<Product> productList, int i) {
-        return String.valueOf(productList.get(i).name);
+        ProduceStand feliciasStand = new ProduceStand();
+        feliciasStand.addFruitToInventory(new Fruit("fruit", "apples", 2.50,true, "red"));
+        feliciasStand.
+        feliciasStand.displayProducts(feliciasStand.myProduce);
     }
 
 }

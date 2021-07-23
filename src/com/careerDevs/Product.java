@@ -1,6 +1,10 @@
 package com.careerDevs;
+
+import java.util.List;
+
 //create class
 public class Product {
+    public List<Product> myProducts;
     public String type;
     public String name;
     public double pricePerPound;
@@ -14,6 +18,12 @@ public class Product {
         this.pricePerPound = pricePerPound;
         this.isInStock = isInStock;
     }
+
+    public void addProductToInventory(Product product) {
+
+
+    }
+
 
 
 }
