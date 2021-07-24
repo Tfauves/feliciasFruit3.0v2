@@ -7,12 +7,14 @@ import java.util.List;
 public class ProduceStand {
 //    public Product product;
     public List<Product> myProduceList = new ArrayList<>();
+    public List<Product> currentWeeksProducts = new ArrayList<>();
 
-    public void currentWeeksProduce() {
+    public void currentWeeksProduce(Product product) {
+        currentWeeksProducts.add(product);
     }
 
-    public void addProductToInventory(Product product) {
-        myProduceList.add(product);
+    public void addProductToInventory(List<Product> productList) {
+        myProduceList.addAll(productList);
     }
 
     public void displayProducts(List<Product> productList) {
