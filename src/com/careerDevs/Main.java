@@ -25,10 +25,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ProduceStand feliciasStand = new ProduceStand();
-        feliciasStand.addFruitToInventory(new Fruit("fruit", "apples", 2.50,true, "red"));
-        feliciasStand.
-        feliciasStand.displayProducts(feliciasStand.myProduce);
+      ProduceStand feliciasStand01 = new ProduceStand();
+
+      feliciasStand01.addProductToInventory(new Fruit("fruit", "apples", 1.29, true, "red"));
+      feliciasStand01.displayProducts(feliciasStand01.myProduceList);
+
+
+
+
+
     }
 
 }

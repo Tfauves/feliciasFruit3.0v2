@@ -1,10 +1,11 @@
 package com.careerDevs;
 
+import java.util.ArrayList;
 import java.util.List;
 
 //create class
 public class Product {
-    public List<Product> myProducts;
+
     public String type;
     public String name;
     public double pricePerPound;
@@ -12,17 +13,15 @@ public class Product {
 
     //create constructor.
     public Product(String type, String name, double pricePerPound, boolean isInStock) {
-
         this.type = type;
         this.name = name;
         this.pricePerPound = pricePerPound;
         this.isInStock = isInStock;
     }
 
-    public void addProductToInventory(Product product) {
 
 
-    }
+
 
 
 
