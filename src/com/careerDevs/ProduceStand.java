@@ -34,4 +34,8 @@ public class ProduceStand {
     public String displayProductByIndex(List<Product> productList, int i) {
         return String.valueOf(productList.get(i).name);
     }
+
+    public void sellProduct() {
+
+    }
 }

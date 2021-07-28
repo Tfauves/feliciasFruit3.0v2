@@ -27,7 +27,10 @@ public class Main {
 
       ProduceStand feliciasStand01 = new ProduceStand();
 
-        feliciasStand01.currentWeeksProduce(new Fruit("fruit", "apples", 1.05, true, "red"));
+        feliciasStand01.currentWeeksProduce(new Fruit("fruit", "apple", 1.05, true, "red"));
+        feliciasStand01.currentWeeksProduce(new Fruit("fruit", "pear", 1.39, true, "green"));
+        feliciasStand01.currentWeeksProduce(new Meat("meat", "steak tips", 3.49, true, true));
+        feliciasStand01.currentWeeksProduce(new Candy("candy", "runts", 1.59, true, true, false));
         feliciasStand01.addProductToInventory(feliciasStand01.currentWeeksProducts);
 
         feliciasStand01.displayProducts(feliciasStand01.myProduceList);
