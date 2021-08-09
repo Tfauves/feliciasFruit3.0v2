@@ -2,10 +2,14 @@ package com.careerDevs;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
+
 
 
 public class ProduceStand {
-//    public Product product;
+    public Scanner scanner = new Scanner(System.in);
+    public String productName;
+    public float amountInPounds;
     public List<Product> myProduceList = new ArrayList<>();
     public List<Product> currentWeeksProducts = new ArrayList<>();
 
@@ -35,7 +39,21 @@ public class ProduceStand {
         return String.valueOf(productList.get(i).name);
     }
 
-    public void sellProduct() {
+    public void sellProduct(String type, String name, double qty) {
+            //inventory--;
+            for (int i = 0; i < myProduceList.size(); i++) {
+                double saleTotal = myProduceList.get(i).pricePerPound * qty;
+                if (myProduceList.get(i).name.equals(name)) {
+                    System.out.println("");
+                    System.out.println(saleTotal);
+
+                }
+            }
+    }
+
+    public void checkOut() {
+        System.out.println("Enter product: ");
+
 
     }
 }

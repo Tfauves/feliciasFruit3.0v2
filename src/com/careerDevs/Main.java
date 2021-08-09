@@ -34,7 +34,7 @@ public class Main {
         feliciasStand01.addProductToInventory(feliciasStand01.currentWeeksProducts);
 
         feliciasStand01.displayProducts(feliciasStand01.myProduceList);
-
+        feliciasStand01.sellProduct("fruit", "apples", 1);
     }
 
 }
